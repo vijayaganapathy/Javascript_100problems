@@ -1,0 +1,17 @@
+<!-- Write a program to enter P, T, R and calculate Simple Interest. -->
+<body>
+    <div id="demo"></div>
+    enter p:<input type="text" id="h1">
+    enter t:<input type="text" id="h2">
+    enter r:<input type="text" id="h3">
+    <button onclick="fun()">Simple Interest</button>
+</body>
+<script>
+    function fun(){
+ var a=parseInt(document.getElementById("h1").value);
+        var b=parseInt(document.getElementById("h2").value);
+        var c=parseInt(document.getElementById("h3").value);
+        result=(a*b*c/100);
+        document.getElementById("demo").innerHTML=result;
+    }
+</script>

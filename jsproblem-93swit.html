@@ -1,0 +1,18 @@
+<!-- Write a program to check whether a number is even or odd using conditional operator -->
+
+<body>
+        Enter string 1:<input type="text" id="h1">
+      
+
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+    function fun(){
+    var a=parseInt(document.getElementById("h1").value)
+  
+    var max=(a%2==0)?'even':'odd';
+    document.getElementById("sum").innerHTML="<h1>"+max;
+}
+    </script>
+

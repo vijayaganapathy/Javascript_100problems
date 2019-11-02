@@ -1,0 +1,16 @@
+<!-- Write a program to enter base and height of a triangle and find its area. -->
+<body>
+    <div id="demo"></div>
+    Base:<input tye="text" id="h1">
+    Height:<input tye="text" id="h2">
+    <button onClick="fun()">area</button>
+
+</body>
+<script>
+        function fun(){
+            var b=parseInt(document.getElementById("h1").value);
+            var h=parseInt(document.getElementById("h2").value);
+            result=(b*h)/2;
+            document.getElementById("demo").innerHTML=result;
+        }
+    </script>

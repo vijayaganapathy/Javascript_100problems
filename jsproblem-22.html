@@ -1,0 +1,17 @@
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter P:<input type="text" id="h1">
+               <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var p=parseInt(document.getElementById("h1").value);
+            if(p%5==0||p%11==0)
+            {
+            document.getElementById("area").innerHTML="<h1>"+"this num is divisible"+" "+ p;
+            }
+            else {    
+            document.getElementById("area").innerHTML="<h1>"+"cannot divisible"+" "+ p;
+            }
+        }
+    </script>

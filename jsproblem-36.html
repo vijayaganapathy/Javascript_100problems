@@ -1,0 +1,30 @@
+<!-- Conditionals
+Write a program to calculate profit or loss.  -->
+
+<!-- formula:[profit=selling price - cost price]
+        [loss=cost price-selling price] -->
+
+<body>
+  
+    Enter Selling Price:<input type="text" id="h1">
+    Enter Cost Price:<input type="text" id="h2">
+    <button onClick="condition1()">Profit</button>
+    <div id="cal" style="color: blue;"></div>
+</body>
+<script>
+    function condition1(){
+        var sp=parseInt(document.getElementById("h1").value);
+        var cp=parseInt(document.getElementById("h2").value);
+        if(sp>cp){
+        result=sp-cp;
+        document.getElementById("cal").innerHTML="<h1>"+"Profit is"+" "+result;
+            }
+        else if(cp>sp){
+            result=cp-sp;
+            document.getElementById("cal").innerHTML="<h1>"+"loss is"+" "+result;
+        }
+        else{
+            document.getElementById("cal").innerHTML="<h1>"+"NO PROFIT AND NO LOSS";
+        }
+    }
+</script>

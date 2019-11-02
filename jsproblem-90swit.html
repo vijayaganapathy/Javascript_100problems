@@ -1,0 +1,39 @@
+<!-- Write a program to find roots of a quadratic equation using switch case -->
+
+<body>
+        Enter string 1:<input type="text" id="h1">
+        Enter string 2:<input type="text" id="h2">
+        Enter string 3:<input type="text" id="h3">
+
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+    
+    const a=parseInt(document.getElementById("h1").value)
+    const b=parseInt(document.getElementById("h2").value)
+    const c=parseInt(document.getElementById("h3").value)
+    const d=parseInt(Math.sqrt(Math.abs(b*b-(4*a*c))));
+    switch(true){
+        case(d>0):
+        var root1=(-b+d)/(2*a);
+        var root2=(-b-d)/(2*a);
+        document.getElementById("sum").innerHTML="root1"+" "+root1+"<br>"+"root2"+" "+root2;
+        break;
+
+        case(d==0):
+        var root1=-b/(2*a);
+        var root2=root1;
+        document.getElementById("sum").innerHTML="root1"+" "+root1+"<br>"+"root2"+" "+root2;
+        break;
+
+        default:
+        var root1=-b/(2*a);
+        var root2=d/(2*a);
+        document.getElementById("sum").innerHTML="root1"+" "+root1+"<br>"+"root2"+" "+root2;
+        break;
+
+
+
+    }
+    </script>

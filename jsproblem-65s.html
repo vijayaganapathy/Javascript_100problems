@@ -1,0 +1,29 @@
+<!-- Write a program to toggle case of each character of a string.????  --> 
+
+<body>
+        Enter string1:<input type="text" id="h1">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+        function fun(){
+            var str=document.getElementById("h1").value;
+            var str1='';
+            for(i=0;i<=str.length;i++)
+            {
+                if(str.charAt(i)===str.charAt(i).toLowerCase())
+                {
+                    str1+=str.charAt(i).toUpperCase()
+                }
+                else if(str.charAt(i)===str.charAt(i).toUpperCase())
+                {
+                    str1+=str.charAt(i).toLowerCase()
+                }
+                else{
+                    str1+=str.charAt(i)
+                }
+            }
+            document.getElementById("sum").innerHTML="<h1>"+"Toggle Case:"+" "+str1;
+        }
+    </script>
+

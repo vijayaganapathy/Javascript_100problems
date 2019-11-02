@@ -1,0 +1,15 @@
+<!-- Write a program to trim trailing white space characters from given string.   -->
+<body>
+        Enter string1:<input type="text" id="h1">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+        function fun() 
+        {
+            var str = document.getElementById("h1").value;
+            //str.trim();
+            str.replace(/^\s+|\s+$/gm,'');
+            document.getElementById("sum").innerHTML="<h1>"+" trim leading white space"+" "+str;
+        }
+    </script>

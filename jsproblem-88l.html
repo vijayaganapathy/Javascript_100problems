@@ -1,0 +1,34 @@
+<!-- Write a program to check whether a number is palindrome or not. -->
+
+<body>
+        <h1>Polindrome</h1>
+        Enter series:<input type="text" id="h1">
+        <button onClick="fun()">enter</button>
+        <div id="sum" style="color: blue;"></div>
+    </body>
+    <script>
+        function fun()
+        {
+            var n = parseInt(document.getElementById("h1").value);
+            temp=0;
+            rem=0;
+            result=0;
+            temp=n;
+            while(n>0)
+            {
+
+                rem=n%10;
+                n =n/10;
+                result=parseInt(result*10+rem);
+            }
+            if(result==temp)
+            {
+                document.getElementById("sum").innerHTML="<h1>"+"Number is Polindrome";
+
+            }
+            else
+            {
+                document.getElementById("sum").innerHTML="<h1>"+"Not a polindrome";
+              }
+                    }
+        </script>

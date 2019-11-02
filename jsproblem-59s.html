@@ -1,0 +1,13 @@
+<!-- Write a program to find length of a string.  -->
+<body>
+    Enter string:<input type="text" id="h1">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun(){
+        var str=document.getElementById("h1").value;
+        var n=str.length;
+        document.getElementById("sum").innerHTML="<h1>"+"string length is"+" "+n;
+    }
+</script>

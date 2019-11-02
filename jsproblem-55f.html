@@ -1,0 +1,25 @@
+<!-- Write a program to find diameter, circumference and area of circle using functions.  -->
+
+<body>
+        Enter number<input type="text" id="h1">
+        <button onClick="fun()">submit</button>
+        <div id="cu" style="color:darkblue"></div>
+    </body>
+    <script>
+         function fun1(r){
+            return 2*r; //Diameter=2r;
+        }
+        function fun2(r){
+            return 2*3.1*r;  //curcumference=2*pi*r;
+        }
+        function fun3(r){
+            return 3.14*r*r; //Circle pi*r*r;
+        }
+        function fun(){
+            var Num=parseInt(document.getElementById("h1").value);
+            document.getElementById("cu").innerHTML="<h1>"+"Diameter"+" "+fun1(Num)+
+                                                    "<br>"+"Circumference"+" "+fun2(Num)+
+                                                    "<br>"+"Circle"+" "+fun3(Num);
+        }
+       
+    </script>

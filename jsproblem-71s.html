@@ -1,0 +1,17 @@
+<!-- Write a program to reverse order of words in a given string.  -->
+
+<body>
+    Enter string1:<input type="text" id="h1">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun() 
+    {
+        var str = document.getElementById("h1").value;
+        str = str.replace(/(^\s*)|(\s*$)/gi,"");
+        str = str.replace(/[ ]{2,}/gi," ");
+        str = str.replace(/\n /,"\n");
+        document.getElementById("sum").innerHTML="<h1>"+"reverse Word"+" "+str.split(' ').reverse().join(' ');
+    }
+</script>

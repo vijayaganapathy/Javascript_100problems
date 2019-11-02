@@ -1,0 +1,23 @@
+<!-- Conditionals
+Write a program to input week number and print week day -->
+
+<body>
+    <div id="demo" style="color: blueviolet;"></div>
+    Enter the weekNumber:<input type="text" id="h1">
+    <button onClick="fun()">submit</button>
+</body>
+<script>
+    function fun(){
+    var day=document.getElementById("h1").value;
+    var weekDay=new Array(7);
+    weekDay[1]="sunday";
+    weekDay[2]="monday";
+    weekDay[3]="tuesday";
+    weekDay[4]="wednessday";
+    weekDay[5]="thursday";
+    weekDay[6]="friday";
+    weekDay[7]="saturday";
+    result=weekDay[day];
+    document.getElementById("demo").innerHTML=result;
+    }
+</script>

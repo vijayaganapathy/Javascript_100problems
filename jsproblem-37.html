@@ -1,0 +1,47 @@
+<!-- Write a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer.
+Calculate
+percentage and grade according to following: 
+Percentage >= 90% : Grade A 
+Percentage >= 80% : Grade B 
+Percentage >= 70% :Grade C 
+Percentage >= 60% : Grade D 
+Percentage >= 40% : Grade E 
+Percentage < 40% : Grade F -->
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter Physics:<input type="text" id="h1">
+        Enter Chemistry:<input type="text" id="h2">
+        Enter Biology:<input type="text" id="h3">
+        Enter Mathematics:<input type="text" id="h4">
+        Enter Computer:<input type="text" id="h5">
+        <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var a=parseInt(document.getElementById("h1").value);
+            var b=parseInt(document.getElementById("h2").value);
+            var c=parseInt(document.getElementById("h3").value);
+            var d=parseInt(document.getElementById("h4").value);
+            var e=parseInt(document.getElementById("h5").value);
+            percentage=(a+b+c+d+e)/5;
+            if(percentage >= 90){
+                document.getElementById("area").innerHTML="<h1>"+"Grade is A"+" "+"percentage is"+" "+percentage;
+            }
+            else if(percentage >= 80)
+            {
+                document.getElementById("area").innerHTML="<h1>"+"Grade is B"+" "+"percentage is"+" "+percentage;
+            }
+            else if(percentage >= 70){
+                document.getElementById("area").innerHTML="<h1>"+"Grade is C"+" "+"percentage is"+" "+percentage;
+            }
+            else if(percentage >= 60){
+                document.getElementById("area").innerHTML="<h1>"+"Grade is D"+" "+"percentage is"+" "+percentage;
+            }
+            else if(percentag>=40){
+                document.getElementById("area").innerHTML="<h1>"+"Grade is E"+" "+"percentage is"+" "+percentage;
+            }
+            else if(percentage < 40){
+                document.getElementById("area").innerHTML="<h1>"+"Grade is F"+" "+"percentage is"+" "+percentage;
+            }
+        }
+    </script>

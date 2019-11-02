@@ -1,0 +1,23 @@
+<!-- Write a program to print all odd number between 1 to 100.  -->
+
+
+<body>
+        Enter series:<input type="text" id="h1">
+        <button onClick="fun()">enter</button>
+        <div id="sum" style="color: blue;"></div>
+    </body>
+    <script>
+        function fun(){
+        var n=document.getElementById("h1").value;
+        i=1;
+        while(i<=100)
+            {
+                i += 2;
+                document.getElementById("sum").innerHTML+=" "+i;
+            }
+        }
+    </script>
+
+
+
+

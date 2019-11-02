@@ -1,0 +1,20 @@
+<!-- Write a program to check whether a number is even or odd using functions. -->
+
+<body>
+        Enter number<input type="text" id="h1">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+        function fun2(x){
+            if(x%2==0)
+                return "even";
+            else
+                return "odd";
+        }
+        function fun() {
+            var Num = parseInt(document.getElementById("h1").value);
+            document.getElementById("sum").innerHTML ="<h1>"+fun2(Num);
+        }
+    
+    </script>

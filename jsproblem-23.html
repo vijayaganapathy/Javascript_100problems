@@ -1,0 +1,21 @@
+<!-- CONDITIONALS
+Write a program to check whether a number is even or odd. -->
+
+
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter P:<input type="text" id="h1">
+               <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var p=parseInt(document.getElementById("h1").value);
+            if(p%2==0)
+            {
+            document.getElementById("area").innerHTML="<h1>"+"EVEN"+" "+ p;
+            }
+            else {    
+            document.getElementById("area").innerHTML="<h1>"+"ODD"+" "+ p;
+            }
+        }
+    </script>

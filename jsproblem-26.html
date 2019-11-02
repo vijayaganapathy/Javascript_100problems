@@ -1,0 +1,20 @@
+<!-- conditionals
+Write a program to input any alphabet and check whether it is vowel or consonant. -->
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter P:<input type="text" id="h1">
+               <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var p=document.getElementById("h1").value;
+           
+            if((p=='a'||p=="e"||p=="i"||p=="o"||p=="u")||(p=="A"||p=="E"||p=="I"||p=="O"||p=="U"))
+            {
+            document.getElementById("area").innerHTML="<h1>"+"character is vowel"+" "+ p;
+            }
+            else {    
+            document.getElementById("area").innerHTML="<h1>"+"consonant"+" "+ p;
+            }
+        }
+    </script>

@@ -1,0 +1,18 @@
+<!-- Write a program to find maximum between three numbers using conditional operator. -->
+
+<body>  <h2>maximum between three numbers using conditional operator</h2>
+        Enter string 1:<input type="text" id="h1">
+        Enter string 2:<input type="text" id="h2">
+        Enter string 2:<input type="text" id="h3">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+    function fun(){
+    var a=parseInt(document.getElementById("h1").value)
+    var b=parseInt(document.getElementById("h2").value)
+    var c=parseInt(document.getElementById("h3").value)
+    var max=(a>b)?(a>c?a:b):(b>c?b:c)
+    document.getElementById("sum").innerHTML="<h1>"+max;
+}
+    </script>

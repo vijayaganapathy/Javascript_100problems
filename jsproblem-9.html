@@ -1,0 +1,13 @@
+<!-- Write a program to enter temperature in Fahrenheit and convert to Celsius -->
+<body>
+        <div id="demo" style="color: darkgoldenrod;"></div>
+        temperature in  Celsius:<input type="text" id="h1">
+        <button onclick="fahre()">Fahrenheit</button>
+    </body>
+    <script>
+        function fahre(){
+            var a=document.getElementById("h1").value;
+            result=(a*5/9)-32;
+            document.getElementById("demo").innerHTML="<h2>"+result+"</h2>";
+            }
+    </script>

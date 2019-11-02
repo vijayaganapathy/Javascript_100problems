@@ -1,0 +1,22 @@
+<!-- Write a program to find sum of all odd numbers between 1 to n.  -->
+
+<body>
+    Enter series:<input type="text" id="h1">
+    <button onClick="fun()">enter</button>
+    <div id="sum" style="color: blue;"></div>
+</body>
+<script>
+    function fun() {
+        var n = parseInt(document.getElementById("h1").value);
+        sum=0;
+        for(i=1;i<=n;i++)
+        {
+            if(i%2!=0)
+            {
+                sum=sum+i;
+            }
+        }
+
+        document.getElementById("sum").innerHTML="<h1>"+"sum of all odd number"+" "+sum;
+    }
+</script>

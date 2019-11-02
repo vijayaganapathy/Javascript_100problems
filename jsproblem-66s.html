@@ -1,0 +1,34 @@
+<!-- Write a program to find total number of alphabets, digits or special character in a string.  -->
+
+<body>
+    Enter string1:<input type="text" id="h1">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun() 
+    {
+        var str = document.getElementById("h1").value;
+        alphabets = 0;
+        digits = 0;
+        special = 0;
+        restr = /^[A-Za-z]+$/;
+        redigit = /^[0-9]+$/;
+        respl =/^[a-zA-Z0-9!@#\$%\^\&*\)\(+=._-]+$/g
+        for (var i = 0; i <= str.length; i++) 
+        {
+            if((str.charAt(i)).match(restr)) 
+            {
+                alphabets++;
+            }
+            else if((str.charAt(i)).match(redigit))
+            {
+                digits++;
+            }
+            else if (str.charAt(i).match(respl)) {
+                special++;
+            }
+        }
+        document.getElementById("sum").innerHTML = "<h1>" +"Count of letter"+ alphabets + " " +"<br>"+"Count of digit"+ digits + " " +"<br>"+"Count of special character"+ special;
+    }
+</script>

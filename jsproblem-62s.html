@@ -1,0 +1,16 @@
+<!-- Write a program to compare two strings.  -->
+
+<body>
+        Enter string1:<input type="text" id="h1">
+        Enter string2:<input type="text" id="h2">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+        function fun(){
+            var str=document.getElementById("h1").value;
+            var str1=document.getElementById("h2").value;
+            var n=str.localeCompare(str1);
+            document.getElementById("sum").innerHTML="<h1>"+"string Compare"+" "+n;
+        }
+    </script>

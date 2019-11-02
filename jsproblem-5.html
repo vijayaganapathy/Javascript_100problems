@@ -1,0 +1,13 @@
+<body>
+    <div id="add" style="color: brown;"></div>
+    Enter length:<input type="text" id="h1">
+    Enter Breadth:<input type="text" id="h2">
+    <button onclick="mul()">Rectangle Area</button>
+</body>
+<script>
+    function mul(){
+        var l=document.getElementById("h1").value;
+        var b=document.getElementById("h2").value;
+        document.getElementById("add").innerHTML=("Area"+l*b);
+    }
+</script>

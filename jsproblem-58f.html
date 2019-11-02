@@ -1,0 +1,61 @@
+<!-- Write a program to check whether a number is prime, Armstrong or perfect number using functions.  -->
+
+<body>
+    Enter number<input type="text" id="h1">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun1(x) {
+        flag = x;
+        addition = 0;
+        while (x > 0) {
+            remainder = x % 10;
+            addition = addition + remainder * remainder * remainder;
+            x = parseInt(x / 10);
+            console.log(addition);
+        }
+        if(addition==flag){
+            return "this is amstrong";
+        }
+        else{
+            return "not a amstrong";
+        }
+    }
+    function fun2(y){
+        result = 0;
+        for(i=2;i<=y/2;i++)
+    {
+        if(y%i==0)
+        {
+            result=1;
+            break;
+        }
+    }
+        if(result==0){
+            return "Prime Number";
+        }
+        else{
+            return "not a Prime";
+        }
+    }
+    function fun3(z){
+        var sum=0;
+        for (i=1;i<=z;i++){
+            if(z%i==0){
+                sum+=i;
+            }
+        }
+        if (sum==z){
+            return "Perfect number";
+        }
+        else{
+            return "Not a perfect number";
+        }
+    }
+    function fun() {
+        var Num = parseInt(document.getElementById("h1").value);
+        document.getElementById("sum").innerHTML = "<h1>" +Num+" "+ fun1(Num)+"<br>"+" "+Num+" "+fun2(Num)
+                                                 +"<br>"+" "+Num+" "+fun3(Num);
+    }
+</script>

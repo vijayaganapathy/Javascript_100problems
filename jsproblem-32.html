@@ -1,0 +1,24 @@
+<!-- Conditionals
+Write a program to input angles of a triangle and check whether triangle is valid or not. -->
+
+<body>
+    <div id="area" style="color: blue;"></div>
+    Enter P:<input type="text" id="h1">
+    Enter R:<input type="text" id="h2">
+    Enter N:<input type="text" id="h3">
+    <button onclick="condition1()">calculate</button>
+</body>
+<script>    
+    function condition1(){
+        var p=parseInt(document.getElementById("h1").value);
+        var r=parseInt(document.getElementById("h2").value);
+        var n=parseInt(document.getElementById("h3").value);
+        result=p+r+n;
+        if(result==180){
+            document.getElementById("area").innerHTML="triangle is valid"+" "+result;
+        }
+        else{
+            document.getElementById("area").innerHTML="triangle is not valid"+" "+result;
+        }
+    }
+</script>

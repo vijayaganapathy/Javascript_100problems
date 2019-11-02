@@ -1,0 +1,17 @@
+<!-- 
+Write a program to find last occurrence of a character in a given string. -->
+
+<body>
+    Enter search:<input type="text" id="h1">
+    Enter string<input type="text" id="h2">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun(){
+    var a=document.getElementById("h1").value;
+    var search=document.getElementById("h2").value;
+    var n=a.lastIndexOf(search);
+    document.getElementById("sum").innerHTML="<h1>"+"last occurrence"+" "+n;
+}
+</script>

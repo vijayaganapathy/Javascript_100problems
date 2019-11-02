@@ -1,0 +1,18 @@
+<!-- Write a program to check whether character is an alphabet or not using conditional operator -->
+
+
+<body>
+        Enter string 1:<input type="text" id="h1">
+      
+
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+    function fun(){
+    var a=document.getElementById("h1").value;
+    var b=/^[A-Za-z]+$/;
+    var max=(a.match(b))?'alphabet':'not a alphabet';
+    document.getElementById("sum").innerHTML="<h1>"+max;
+}
+    </script>

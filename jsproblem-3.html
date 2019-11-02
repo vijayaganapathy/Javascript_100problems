@@ -1,0 +1,59 @@
+<body>
+    <div id="arithmetic" style="color: blue;"></div>
+    Enter num1:<input type="text" id="h1">
+    Enter num2:<input type="text" id="h2">
+    <button onclick="add()">sum</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+    <button onclick="mod()">mod</button>
+    <button onclick="exp()">exp</button>
+    <button onclick="inc()">inc</button>
+    <button onclick="dec()">dec</button>
+</body>
+<script>
+function add(){
+    var a=parseInt(document.getElementById("h1").value);
+    var b=parseInt(document.getElementById("h2").value);
+    document.getElementById("arithmetic").innerHTML="<h1>"+a+b+"</h1>";
+}
+function sub(){
+    var a=parseInt(document.getElementById("h1").value);
+    var b=parseInt(document.getElementById("h2").value);
+    document.getElementById("arithmetic").innerHTML=a-b;
+}
+function mul(){
+    var a=parseInt(document.getElementById("h1").value);
+    var b=parseInt(document.getElementById("h2").value);
+    document.getElementById("arithmetic").innerHTML=a*b;
+}
+function div(){
+    var a=parseInt(document.getElementById("h1").value);
+    var b=parseInt(document.getElementById("h2").value);
+    document.getElementById("arithmetic").innerHTML=a/b;
+}
+function mod(){
+    var a=parseInt(document.getElementById("h1").value);
+    var b=parseInt(document.getElementById("h2").value);
+    document.getElementById("arithmetic").innerHTML=a%b;
+}
+function exp(){
+    var a=parseInt(document.getElementById("h1").value);
+    var b=parseInt(document.getElementById("h2").value);
+    document.getElementById("arithmetic").innerHTML=a**b;
+}
+function inc(){
+    var a=parseInt(document.getElementById("h1").value);
+    //var b=parseInt(document.getElementById("h2").value);
+    n=a+1;
+    alert("done increment"+n);
+    document.getElementById("arithmetic").innerHTML=n;
+}
+function dec(){
+    var a=parseInt(document.getElementById("h1").value);
+   //var b=parseInt(document.getElementById("h2").value);
+   m=a-1;
+   alert("done decrement"+m);
+    document.getElementById("arithmetic").innerHTML=m;
+}
+</script>

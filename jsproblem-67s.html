@@ -1,0 +1,24 @@
+<!-- Write a program to count total number of vowels and consonants in a string -->
+
+<body>
+    Enter string1:<input type="text" id="h1">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun() {
+        var str = document.getElementById("h1").value;
+        count = 0;
+        count1 = 0;
+        for (var i = 0; i < str.length; i++) {
+            if ((str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') || (str.charAt(i) == 'A' || str.charAt(i) == 'E' || str.charAt(i) == 'I' || str.charAt(i) == 'O' || str.charAt(i) == 'U')) {
+                count++;
+            }
+            else if ((str.charAt(i) >= 'a' && str.charAt(i) <= 'z') || (str.charAt(i) >= 'a' && str.charAt(i) <= 'z')) {
+                count1++;
+            }
+        }
+        document.getElementById("sum").innerHTML ="<h1>"+"Vowels Count"+" "+count + 
+                                                "<br>" +"Consonents Count"+" "+count1;
+    }
+</script>

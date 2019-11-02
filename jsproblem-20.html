@@ -1,0 +1,19 @@
+<!-- conditionals:
+Write a program to find maximum between three numbers -->
+
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter P:<input type="text" id="h1">
+        Enter R:<input type="text" id="h2">
+        Enter N:<input type="text" id="h3">
+        <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var p=parseInt(document.getElementById("h1").value);
+            var r=parseInt(document.getElementById("h2").value);
+            var n=parseInt(document.getElementById("h3").value);
+            result=Math.max(p,r,n);
+            document.getElementById("area").innerHTML="<h1>"+"Maxumum number"+" "+ result;
+        }
+    </script>

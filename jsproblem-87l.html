@@ -1,0 +1,23 @@
+
+
+<body>
+        <h1>Reverse of digit of a number</h1>
+        Enter series:<input type="text" id="h1">
+        <button onClick="fun()">enter</button>
+        <div id="sum" style="color: blue;"></div>
+    </body>
+    <script>
+        function fun()
+        {
+            var n = parseInt(document.getElementById("h1").value);
+           last=1;
+           reverse=[];
+            while(n){
+
+                last=n%10;
+                reverse.push(last);
+                n =Math.floor(n/10);
+            }
+            document.getElementById("sum").innerHTML="<h1>"+"Reverse of digit of a number"+" "+reverse.join('');
+        }
+        </script>

@@ -1,0 +1,24 @@
+<!-- Write a program to count number of digits in a number. -->
+
+<body>
+    Enter series:<input type="text" id="h1">
+    <button onClick="fun()">enter</button>
+    <div id="sum" style="color: blue;"></div>
+</body>
+<script>
+    function fun()
+    {
+        var n = parseInt(document.getElementById("h1").value);
+        var count=0;
+        if(n>=1)
+            count++;
+
+        while(n/10>=1)
+        {
+            n=n/10;
+            count++;
+        }
+
+        document.getElementById("sum").innerHTML="<h1>"+"number of digits in a number"+" "+count;
+    }
+    </script>

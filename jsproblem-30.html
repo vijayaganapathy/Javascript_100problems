@@ -1,0 +1,29 @@
+<!-- conditionals
+Write a program to input month number and print number of days in that month. -->
+
+<body>
+        <div id="demo" style="color: blueviolet;"></div>
+        Enter the month:<input type="text" id="h1">
+        <button onClick="fun()">submit</button>
+    </body>
+    <script>
+        function fun(){
+        var day=document.getElementById("h1").value;
+        var weekDay=new Array(7);
+        weekDay[1]="30 days";
+        weekDay[2]="28/29 days(include leap year)";
+        weekDay[3]="31 days";
+        weekDay[4]="30 days";
+        weekDay[5]="31 days";
+        weekDay[6]="30 days";
+        weekDay[7]="31 days";
+        weekDay[8]="31 days";
+        weekDay[9]="30 days";
+        weekDay[10]="31 days";
+        weekDay[11]="30 days";
+        weekDay[12]="31 days";
+        result=weekDay[day];
+        document.getElementById("demo").innerHTML="<h1>"+result;
+        }
+    </script>
+    

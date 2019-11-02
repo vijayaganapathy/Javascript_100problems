@@ -1,0 +1,25 @@
+<!-- Write a program to check whether a string is palindrome or not.  -->
+
+
+<body>
+    Enter string1:<input type="text" id="h1">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun() 
+    {
+        rev=[];
+        var str=document.getElementById("h1").value;
+        for(i=str.length-1;i>=0;i--)
+        {
+            rev.push(str[i]);
+        } 
+        if(rev.join('')==str){
+        document.getElementById("sum").innerHTML="<h1>"+str+" "+"Is Polindrome";
+    }
+    else{
+        document.getElementById("sum").innerHTML="<h1>"+str+" "+"Not a Polindrome";
+    }
+    }
+</script>

@@ -1,0 +1,19 @@
+<!-- Write a program to find sum of first and last digit of a number. -->
+
+<body>
+    <h1>sum of first and last digit of a number</h1>
+    Enter series:<input type="text" id="h1">
+    <button onClick="fun()">enter</button>
+    <div id="sum" style="color: blue;"></div>
+</body>
+<script>
+    function fun()
+    {
+        var n = parseInt(document.getElementById("h1").value);
+        last=n%10;
+        while(n>=10){
+            n =Math.floor(n/10);
+        }
+        document.getElementById("sum").innerHTML="<h1>"+"sum of first and last digit of a number"+" "+parseInt(n+last);
+    }
+    </script>

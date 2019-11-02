@@ -1,0 +1,18 @@
+<body>
+
+    <div id="demo"></div>
+    Enter value1:<input type="text" id="h1" placeholder="num1">
+    
+    Enter value2:<input type="text" id="h2" placeholder="num2">
+    <button onclick="Sum()">SUM</button>
+</body>
+<script>
+    
+    function Sum(){
+        var a=parseInt(document.getElementById("h1").value);
+        var b=parseInt(document.getElementById("h2").value);
+        result=a+b;
+        document.getElementById("demo").innerHTML=result;
+}
+
+</script>

@@ -1,0 +1,27 @@
+<!-- conditionals
+Write a program to input any character and check whether it is alphabet, digit or special character. -->
+
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter P:<input type="text" id="h1">
+               <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var p=document.getElementById("h1").value;
+            alphabet=/^[A-Za-z]+$/;
+            digit=/^[0-9]+$/;
+            special= "[$&+,:;=?@#|'<>.-^*()%!]";
+            if(p.match(alphabet))
+            {
+            document.getElementById("area").innerHTML="<h1>"+"stirng is alphabet "+ p;
+            }
+            else if(p.match(digit)) {    
+            document.getElementById("area").innerHTML="<h1>"+"value is digit"+ p;
+            }
+            else if(p.match(special)){
+            document.getElementById("area").innerHTML="<h1>"+"Is this special character" +p;
+                }
+                
+        }
+    </script>

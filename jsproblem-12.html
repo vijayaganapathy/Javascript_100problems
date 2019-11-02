@@ -1,0 +1,16 @@
+<!-- Write a program to enter any number and calculate its square root -->
+
+<body>
+    <div id="demo"></div>
+    Enter value:<input type="text" id="h1">
+    <button onclick="fun()">square root</button>
+</body>
+<script>
+function fun(){
+    //math.sqrt();
+    var a=document.getElementById("h1").value;
+    //result=a**(1/2);
+    result=Math.sqrt(a);
+    document.getElementById("demo").innerHTML=result;
+}
+</script>

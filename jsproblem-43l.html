@@ -1,0 +1,36 @@
+<!-- Write a program to print all even numbers between 1 to 100. - using while loop -->
+
+<body>
+    Enter series:<input type="text" id="h1">
+    <button onClick="fun()">enter</button>
+    <div id="sum" style="color: blue;"></div>
+</body>
+<script>
+    function fun() {
+        var n = document.getElementById("h1").value;
+        // i = 1;
+        // console.log(n);
+        // if(i<=n){
+        //     while (i % 2 == 0) 
+        //         {
+        //     document.getElementById("sum").innerHTML += " " + i;
+        //     i++;
+        //     }
+                
+        // }
+      sum=0;
+      //i=1;
+        for(i=1;i<=n;i++)
+        //while(i<=n)
+        {
+            if(i%2==0)
+            {
+                sum+=" "+i;
+               // i++;
+            }
+        }
+
+        document.getElementById("sum").innerHTML="<h1>"+"even number"+" "+sum;
+  
+    }
+</script>

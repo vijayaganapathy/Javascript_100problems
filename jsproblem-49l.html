@@ -1,0 +1,21 @@
+<!-- Write a program to print multiplication table of any number -->
+
+<body>
+        <h2>Multplication table</h2>
+    Enter series:<input type="text" id="h1">
+    <button onClick="fun()">enter</button>
+    <div id="sum" style="color: blue;"></div>
+</body>
+<script>
+    function fun() {
+        var n = parseInt(document.getElementById("h1").value);
+        sum=0;
+        for(i=1;i<=20;i++)
+        {
+            sum=n*i;
+            document.getElementById("sum").innerHTML+="<h1>"+n+"*"+i+"="+sum;
+        }
+
+       
+    }
+</script>

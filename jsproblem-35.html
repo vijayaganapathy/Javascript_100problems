@@ -1,0 +1,25 @@
+<!-- conditionals
+Write a program to find all roots of a quadratic equation -->
+<body>
+    <div id="area" style="color: blue;"></div>
+    Enter P:<input type="text" id="h1">
+    Enter R:<input type="text" id="h2">
+    Enter N:<input type="text" id="h3">
+    <button onclick="condition1()">calculate</button>
+</body>
+<script>
+    function condition1() {
+        var a = parseInt(document.getElementById("h1").value);//x =  −b + √(b2 − 4ac)2a
+                                                                //x =  −b − √(b2 − 4ac)2a
+        var b = parseInt(document.getElementById("h2").value);
+        var c = parseInt(document.getElementById("h3").value);
+        alert("b should higher than other value");
+        result=Math.abs(Math.sqrt(b*b-(4*a*c)));
+        result1=Math.abs(2*a);
+        root1=(-b+result)/result1;
+        root2=(-b-result)/result1;
+        document.getElementById("area").innerHTML="root 1 is"+" "+root1+"<br>"+
+                                                    "root 2 is"+" "+root2;
+    }
+</script>
+

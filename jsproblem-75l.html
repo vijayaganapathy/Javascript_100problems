@@ -1,0 +1,14 @@
+<!-- Write a program to convert Binary to Decimal number system. -->
+
+<body>
+        Enter string1:<input type="text" id="h1">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+        function fun(){
+            var value=parseInt(document.getElementById("h1").value);
+            var Decimal=parseInt(value,2).toString(10);
+            document.getElementById("sum").innerHTML="<h1>"+"Binary to Decimal number system"+" "+Decimal;
+        }
+    </script>

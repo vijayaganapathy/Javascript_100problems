@@ -1,0 +1,20 @@
+<!-- conditionals
+Write a program to check whether a year is leap year or not -->
+
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter P:<input type="text" id="h1">
+               <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var p=parseInt(document.getElementById("h1").value);
+            if(p%4==0 || p%400==0)
+            {
+            document.getElementById("area").innerHTML="<h1>"+"Leap Year"+" "+ p;
+            }
+            else {    
+            document.getElementById("area").innerHTML="<h1>"+"Not a Leap Year"+" "+ p;
+            }
+        }
+    </script>

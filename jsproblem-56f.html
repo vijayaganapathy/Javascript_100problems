@@ -1,0 +1,19 @@
+<!-- Write a program to find maximum and minimum between two numbers using functions.  -->
+
+<body>
+    Enter number<input type="text" id="h1">
+    Enter number<input type="text" id="h2">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun() {
+        var Num = parseInt(document.getElementById("h1").value);
+        var Num1 = parseInt(document.getElementById("h2").value);
+        max1=Math.max(Num,Num1);
+        min1=Math.min(Num,Num1);
+        document.getElementById("sum").innerHTML ="<h1>"+"Maximum number"+" "+max1+
+                                                "<br>"+"Minimum number"+" "+min1; 
+    }
+
+</script>

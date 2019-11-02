@@ -1,0 +1,24 @@
+<!-- Write a program to swap first and last digits of a number.  -->
+<body>
+    Enter series:<input type="text" id="h1">
+    <button onClick="fun()">enter</button>
+    <div id="sum" style="color: blue;"></div>
+</body>
+<script>
+    function fun()
+    {
+        var first = parseInt(document.getElementById("h1").value);
+        var temp;
+        last=first%10;
+        while(first>=10){
+            first =Math.floor(first/10);
+         temp=first;
+            first=last;
+             last=temp;
+
+        }
+         document.getElementById("sum").innerHTML=first+" "+last+" "+first+" "+last;
+        
+        //"first number"+first+"last number"+last+"<br>"+"after swapping"+" "+last+" "+first;
+    }
+    </script>

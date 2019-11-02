@@ -1,0 +1,45 @@
+<!-- Write a program to print day of week name using switch case. -->
+
+<body>
+    <h1>week name using switch case</h1>
+    Enter string1:<input type="text" id="h1">
+    <button onClick="fun()">get</button>
+    <div id="sum" style="color:darkblue"></div>
+</body>
+<script>
+    function fun() {
+        var val = document.getElementById("sum").value;
+        //val = new Date()
+        document.getElementById("sum").innerHTML = fun2(val);
+    }
+    function fun2(day) {
+        //var days;
+        switch(day) 
+        {
+            case '0':
+                return "Sunday";
+                break;
+            // case 1:
+            //     days = "monday";
+            //     break;
+            // case 1:
+            //     days = "tuesday";
+            //     break;
+            // case 1:
+            //     days = "wedness day";
+            //     break;
+            // case 1:
+            //     days = "thursday";
+            //     break;
+            // case 1:
+            //     days = "friday";
+            //     break;
+            // case 1:
+            //     days = "satureday";
+            //     break;
+            default:
+                return "No any case found";
+                }
+       // return days;
+    }
+</script>

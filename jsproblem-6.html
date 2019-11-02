@@ -1,0 +1,24 @@
+<body>
+    <div id="area"></div>
+    Enter Radius:<input type="text" id="h1">
+    <button onclick="condition1()">Diameter</button>
+    <button onclick="condition2()">Circumference</button>
+    <button onclick="condition3()">Circle</button>
+</body>
+<script>
+    function condition1(){
+        var r=document.getElementById("h1").value;
+        diameter=2*r; //formula:2r
+        document.getElementById("area").innerHTML=diameter;
+    }
+    function condition2(){
+        var r=document.getElementById("h1").value;
+        diameter=2*3.14*r; //formula:2πr
+        document.getElementById("area").innerHTML=diameter;
+    }
+    function condition3(){
+        var r=document.getElementById("h1").value;
+        diameter=3.14*r*r; //formula:πr² 
+        document.getElementById("area").innerHTML=diameter;
+    }
+</script>

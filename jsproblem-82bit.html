@@ -1,0 +1,20 @@
+<!-- Write a program to check whether a number is even or odd using bitwise operator.  -->
+
+
+<body>
+    <h1>even or odd using bitwise operator</h1>
+        Enter string1:<input type="text" id="h1">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+        function fun(){
+            var value=parseInt(document.getElementById("h1").value);
+            if(value & 1){
+                document.getElementById("sum").innerHTML="<h1>"+"odd" + " "+value;
+            }
+            else{
+                document.getElementById("sum").innerHTML="<h1>"+"even"+" "+value;
+            }
+        }
+    </script>

@@ -1,0 +1,15 @@
+<!-- Write a program to find sum of all natural numbers between 1 to n.  -->
+
+<body>
+    Enter series:<input type="text" id="h1">
+    <button onClick="fun()">enter</button>
+    <div id="sum" style="color: blue;"></div>
+</body>
+<script>
+    function fun() {
+        var n = parseInt(document.getElementById("h1").value);
+        val=n*(n+1);
+        val1=val/2;
+        document.getElementById("sum").innerHTML="<h1>"+"sum of all natural number"+" "+val1;
+    }
+</script>

@@ -1,0 +1,26 @@
+<!-- condtionals
+Write a program to check whether the triangle is equilateral, isosceles or scalene triangle.  -->
+
+<body>
+    <div id="area" style="color: blue;"></div>
+    Enter P:<input type="text" id="h1">
+    Enter R:<input type="text" id="h2">
+    Enter N:<input type="text" id="h3">
+    <button onclick="condition1()">calculate</button>
+</body>
+<script>
+    function condition1() {
+        var a = parseInt(document.getElementById("h1").value);
+        var b = parseInt(document.getElementById("h2").value);
+        var c = parseInt(document.getElementById("h3").value);
+        if (a==b && b==c && c==a) {
+            document.getElementById("area").innerHTML = "<h1>"+"triangle is equilateral"
+        }
+        else if(a==b || b==c) {
+            document.getElementById("area").innerHTML ="<h1>"+ "triangle is isosceles"
+        }
+        else if(a!=b && b!=c && c!=a){
+            document.getElementById("area").innerHTML ="<h1>"+ "triangle is scalene"
+        }
+    }
+</script>

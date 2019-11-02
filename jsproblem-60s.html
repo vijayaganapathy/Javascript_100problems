@@ -1,0 +1,15 @@
+<!-- Write a program to copy one string to another string.  -->
+
+<body>
+        Enter string1:<input type="text" id="h1">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+        function fun(){
+            var str=document.getElementById("h1").value;
+            var n=str;
+            document.getElementById("sum").innerHTML="<h1>"+"Original value"+" "+str+
+                                        "<br>"+"String copy value"+" "+n;
+        }
+    </script>

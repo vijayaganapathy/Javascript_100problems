@@ -1,0 +1,15 @@
+<!-- enter length in centimeter and convert it into meter and kilometer. -->
+
+<body>
+    <div id="sum" style="color: crimson;"> </div>
+    Enter Centimeter<input type="text" id="h1">
+    <button onclick="get()">meter And Kilometer</button>
+</body>
+<script>
+function get(){
+    var centi=document.getElementById("h1").value;
+    meter=centi/100;
+    kilometer=centi/100000;
+    document.getElementById("sum").innerHTML=("<h3>"+"Meter is"+" "+meter+"<br>"+"kilometer is"+" "+kilometer+"<h3>");
+}
+</script>

@@ -1,0 +1,28 @@
+<!-- Write a program to enter marks of five subjects and calculate total, average and
+percentage. -->
+
+<body>
+    <div id="area"></div>
+    mark 1:<input type="text" id="h1">
+    mark 2:<input type="text" id="h2">
+    mark 3:<input type="text" id="h3">
+    mark 4:<input type="text" id="h4">
+    mark 5:<input type="text" id="h5">
+    <button onclick="condition1()">calculate</button>
+</body>
+<script>
+    function condition1(){
+        var a=parseInt(document.getElementById("h1").value);
+        var b=parseInt(document.getElementById("h2").value);
+        var c=parseInt(document.getElementById("h3").value);
+        var d=parseInt(document.getElementById("h4").value);
+        var e=parseInt(document.getElementById("h5").value);
+        total=a+b+c+d+e;
+        avg=total/5;
+        percentage=avg;
+        document.getElementById("area").innerHTML=("total is"+" "+total+
+                                                "<br>"+"average is"+" "+avg+
+                                                "<br>"+"percentage is"+" "+percentage+"%");
+
+    }
+</script>

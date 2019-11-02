@@ -1,0 +1,18 @@
+<!--  
+Write a program to find cube of any number using function. -->
+
+<body>
+    Enter number<input type="text" id="h1">
+    <button onClick="fun()">submit</button>
+    <div id="cu" style="color:darkblue"></div>
+</body>
+<script>
+     function fun2(x){
+        return x*x*x;
+    }
+    function fun(){
+        var Num=parseInt(document.getElementById("h1").value);
+        document.getElementById("cu").innerHTML="<h1>"+"cube of this number is"+" "+ fun2(Num);
+    }
+   
+</script>

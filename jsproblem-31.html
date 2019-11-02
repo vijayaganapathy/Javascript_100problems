@@ -1,0 +1,18 @@
+<!-- Write a program to count total number of notes in given amount. -->
+<body>
+<div id="demo"></div>
+Enter amount:<input type="text" id="h1">
+<button onClick="fun()">get</button>
+</body>
+<script>
+    function fun(){
+    var a=parseInt(document.getElementById("h1").value);
+    var array=[2000,500,200,100,50,20,10,5,2,1];
+    var temp=a;
+    for(i=0;i<10;i++){
+        document.getElementById("demo").innerHTML=(temp/array[i]);
+        temp=temp%array[i];
+    }
+}
+    
+</script> 

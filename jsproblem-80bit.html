@@ -1,0 +1,20 @@
+<!-- Write a program to swap two numbers using bitwise operator.  -->
+
+
+<body>
+        Enter string 1:<input type="text" id="h1">
+        Enter string 2:<input type="text" id="h2">
+        <button onClick="fun()">get</button>
+        <div id="sum" style="color:darkblue"></div>
+    </body>
+    <script>
+            function fun(){
+                var a=parseInt(document.getElementById("h1").value);
+                var b=parseInt(document.getElementById("h2").value);
+                a=a^b;
+                b=a^b;
+                a=a^b;
+                document.getElementById("sum").innerHTML="<h1>"+"after"+" "+a+" "+b;
+                                                      
+            }
+        </script>

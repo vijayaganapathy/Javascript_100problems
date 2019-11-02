@@ -1,0 +1,22 @@
+<!-- Conditionals
+Write a program to check whether a character is uppercase or lowercase alphabet.  -->
+
+
+<body>
+        <div id="area" style="color: blue;"></div>
+        Enter P:<input type="text" id="h1">
+               <button onclick="condition1()">calculate</button>
+    </body>
+    <script>    
+        function condition1(){
+            var p=document.getElementById("h1").value;
+            if(p>="a" && p<="z")
+            {
+            document.getElementById("area").innerHTML="<h1>"+"LOWERCASE"+" "+ p;
+            }
+            else if(p>="A" && p<="Z")
+            {    
+            document.getElementById("area").innerHTML="<h1>"+"UPPERCASE"+" "+ p;
+            }
+        }
+    </script>
